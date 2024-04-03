@@ -6,7 +6,7 @@
 * Links
 
 ## INTRODUCTION
-* Esta web busca mostrar los diferentes metodos de posicionamiento combinando Flex y Grid para las páginas web responsivas, en adición, se utilizan Formularios y JavaScript con el objetivo de actualizar dinamicamente la información en pantalla.
+* Esta web busca mostrar los diferentes metodos de posicionamiento combinando Flex y Grid para las páginas web responsivas, en adición, se utilizan Formularios, JavaScript y React con el objetivo de actualizar dinamicamente la información en pantalla.
 
 ## DESCRIPTION
 ### Sprint 5
@@ -31,7 +31,7 @@
 * Se agregan las API para conectar el proyecto al servidor y así mejorar el alcance de la página web.
 * Se refactoriza el codigo para mejorar su funcionalidad con ayuda de la programacion asincrona.
 ### Sprint 11
-* Se refactoriza el codigo utilizando REACT para mejorar su funcionalidad
+* Se refactoriza el codigo utilizando REACT para mejorar su funcionalidad.
 
 ## LINKS
 * [GIT Page](https://sancoroso1.github.io/web_project_around/)
