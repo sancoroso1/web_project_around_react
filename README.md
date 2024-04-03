@@ -34,4 +34,4 @@
 * Se refactoriza el codigo utilizando REACT para mejorar su funcionalidad.
 
 ## LINKS
-* [GIT Page](https://sancoroso1.github.io/web_project_around/)
+* [GIT Page](https://sancoroso1.github.io/web_project_around_react/)
