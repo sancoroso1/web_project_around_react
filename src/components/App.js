@@ -38,7 +38,6 @@ function App() {
 
     useEffect(() => {
       document.addEventListener("keydown", escFunction, false);
-
       return () => {
         document.removeEventListener("keydown", escFunction, false);
       };
@@ -50,34 +49,38 @@ function App() {
   function handleEditAvatarClick() {
     setIsEditAvatarPopupOpen(true);
   }
+
   function handleEditProfileClick() {
     setIsEditProfilePopupOpen(true);
   }
+
   function handleAddPlaceClick() {
     setIsAddPlacePopupOpen(true);
   }
+
   function handleConfirmDeleteClick(cardId) {
     setSelectedCardToDelete(cardId);
   }
+
   function handleCardClick(card) {
     setSelectedCard(card);
   }
+
   function handleUpdateUser({ name, about }) {
     api.editUserInfo(name, about).then(setCurrentUser).then(closeAllPopups);
   }
+
   function handleUpdateAvatar(avatar) {
     api.editAvatar(avatar).then(setCurrentUser).then(closeAllPopups);
   }
 
   const [cardsApp, setCards] = useState([]);
-
   useEffect(() => {
     api.getInitialCards().then((apiCards) => setCards(apiCards));
   }, []);
 
   function handleCardLike(card) {
     const isLiked = card.likes.some((i) => i._id === currentUser._id);
-
     api.changeLikeCardStatus(card._id, isLiked).then((newCard) => {
       setCards((state) => state.map((c) => (c._id === card._id ? newCard : c)));
     });

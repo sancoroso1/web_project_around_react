@@ -32,6 +32,10 @@
 * Se refactoriza el codigo para mejorar su funcionalidad con ayuda de la programacion asincrona.
 ### Sprint 11
 * Se refactoriza el codigo utilizando REACT para mejorar su funcionalidad.
+### Sprint 12
+* Se refactoriza el codigo utilizando REACT para mejorar su funcionalidad.
+* Se utiliza Context para el estado actual del usuario.
+* Se crean los componentes para Likes, eliminar tarjetas, editar perfil, editar avatar y añadir nuevas tarjetas.
 
 ## LINKS
 * [GIT Page](https://sancoroso1.github.io/web_project_around_react/)

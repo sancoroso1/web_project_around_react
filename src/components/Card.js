@@ -11,12 +11,15 @@ function Card({
   const { link, name, likes, _id } = cardData;
 
   const currentUser = useContext(UserContext);
+
   const isOwn = cardData.owner._id === currentUser._id;
   const cardDeleteButtonClassName = `elements__trash ${isOwn ? "elements__trash_hidden" : "elements__trash"
     }`;
+
   const isLiked = cardData.likes.some((i) => i._id === currentUser._id);
   const cardLikeButtonClassName = `elements__like-button ${isLiked ? "elements__like-button_click" : ""
     }`;
+
   const handleLike = () => {
     onCardClick(cardData);
   };
